@@ -37,13 +37,16 @@ const Register = () => {
             createUser(data.email, data.password)
                 .then(result => {
                     const loggedUser = result.user;
+                    console.log(loggedUser);
                     setUser(loggedUser);
                     updateProfile(loggedUser, {
                         displayName: data.name,
                         photoURL: res.data.data.display_url
-                    })
-                        .then(() => {
+                    }).then(() => {
                             console.log('Profile updated');
+                        })
+                        .catch((err)=>{
+                            console.log(err.message);
                         })
                     Swal.fire({
                         position: "center",
