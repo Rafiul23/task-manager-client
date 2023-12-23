@@ -5,6 +5,7 @@ import useAxiosPublic from './../../Hooks/useAxiosPublic';
 import { useForm } from 'react-hook-form';
 import { updateProfile } from 'firebase/auth';
 import Swal from 'sweetalert2';
+import SocialLogin from '../SocialLogin.jsx/SocialLogin';
 
 const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
@@ -91,7 +92,8 @@ const Register = () => {
 
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div>
+            <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row">
                 <div className="text-center md:w-1/2 w-full lg:text-left">
                     <img src={registerImg} alt="" />
@@ -153,6 +155,11 @@ const Register = () => {
                     </form>
                 </div>
             </div>
+           
+        </div>
+        <div className='text-center'>
+            <SocialLogin></SocialLogin>
+        </div>
         </div>
     );
 };

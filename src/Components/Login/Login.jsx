@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import loginImg from '../../assets/login.png'
 import useAuth from '../../Hooks/useAuth';
 import Swal from 'sweetalert2';
+import SocialLogin from '../SocialLogin.jsx/SocialLogin';
 
 const Login = () => {
 
@@ -33,7 +34,8 @@ const Login = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div>
+            <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center md:w-1/2 w-full lg:text-left">
 
@@ -62,6 +64,10 @@ const Login = () => {
                     </form>
                 </div>
             </div>
+        </div>
+        <div className='text-center'>
+            <SocialLogin></SocialLogin>
+        </div>
         </div>
     );
 };
