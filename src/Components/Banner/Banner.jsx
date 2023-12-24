@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import tasks from '../../assets/task.png'
 
 const Banner = () => {
@@ -7,7 +8,9 @@ const Banner = () => {
             <div className='text-purple-600 my-auto w-full md:w-1/2 md:text-left text-center'>
                 <h2 className='text-3xl font-bold'>Enlist and Manage your Tasks at Task Manager</h2>
                 <p className='text-xl'>It is easy and useful.</p>
-                <button className='btn bg-purple-600 text-white mt-4'>Let us Explore</button>
+                <button className='btn bg-purple-600 text-white mt-4'>
+                    <Link to='/dashboard/userProfile'>Let us Explore</Link>
+                </button>
             </div>
         </div>
     );
