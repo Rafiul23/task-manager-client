@@ -10,7 +10,7 @@ const Benificial = () => {
                 <div className="shadow-xl bg-purple-400">
                     <img src={doctor} className='w-full h-[200px]'/>
                     <div className="text-center p-3">
-                    <h2 className="text-2xl font-bold">Dr. Daylon</h2>
+                    <h2 className="text-2xl font-bold">Dr. Katty</h2>
                     <p>Neurologist</p>
                     <p className=" font-bold">Hi! I am using this app for my daily activities.</p>
                     </div>
@@ -26,7 +26,7 @@ const Benificial = () => {
                 <div className="shadow-xl bg-purple-400">
                     <img src={lawyer} className='w-full h-[200px]' />
                     <div className="text-center p-3">
-                    <h2 className="text-2xl font-bold">Michael Max</h2>
+                    <h2 className="text-2xl font-bold">Jenifer Rose</h2>
                     <p>Lawyer</p>
                     <p className=" font-bold">The app is very useful and it makes my works easy.</p>
                     </div>
