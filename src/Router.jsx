@@ -7,6 +7,7 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Dashboard from "./Components/Dashboard/Dashboard";
 import MyProfile from "./Components/MyProfile/MyProfile";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -29,19 +30,19 @@ const router = createBrowserRouter([
     },
     {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children: [
             {
                 path: '/dashboard/addTask',
-                element: <AddTask></AddTask>
+                element: <PrivateRoute><AddTask></AddTask></PrivateRoute>
             },
             {
                 path: '/dashboard/myTasks',
-                element: <MyTasks></MyTasks>
+                element: <PrivateRoute><MyTasks></MyTasks></PrivateRoute>
             },
             {
                 path: '/dashboard/userProfile',
-                element: <MyProfile></MyProfile>
+                element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
             }
         ]
     }
