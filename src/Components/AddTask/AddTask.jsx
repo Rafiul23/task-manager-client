@@ -2,12 +2,14 @@ import { useForm } from "react-hook-form";
 import { FaPlus } from "react-icons/fa";
 import Swal from "sweetalert2";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
+import useAuth from "../../Hooks/useAuth";
 
 
 const AddTask = () => {
 
     const axiosPublic = useAxiosPublic();
-
+    const {user} = useAuth();
+    const email = user.email;
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = async (data) => {
@@ -20,7 +22,8 @@ const AddTask = () => {
                 deadline: data.deadline,
                 task_description: data.description,
                 priority: data.priority,
-                status: 'todo'
+                status: 'todo',
+                email
             }
 
             const res = await axiosPublic.post('/task', taskInfo);
