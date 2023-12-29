@@ -5,8 +5,8 @@ import { NavLink, Outlet } from 'react-router-dom';
 const Dashboard = () => {
     return (
         <div className="container mx-auto">
-            <div className="flex">
-                <div className="bg-purple-600 w-1/5 h-screen sticky top-0 left-0">
+            <div className="flex md:flex-row flex-col">
+                <div className="bg-purple-600 w-full md:w-1/5 h-screen md:sticky md:top-0 md:left-0">
                     <ul className="menu text-white">
 
                         

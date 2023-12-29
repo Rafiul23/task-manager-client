@@ -6,9 +6,9 @@ const Benificial = () => {
     return (
         <div>
             <h2 className="text-center text-3xl font-bold text-purple-600">Who are getting benifits from us</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
                 <div className="shadow-xl bg-purple-400">
-                    <img src={doctor} className='w-full h-[200px]'/>
+                    <img src={doctor} className='w-full h-[250px]'/>
                     <div className="text-center p-3">
                     <h2 className="text-2xl font-bold">Dr. Katty</h2>
                     <p>Neurologist</p>
@@ -16,7 +16,7 @@ const Benificial = () => {
                     </div>
                 </div>
                 <div className="shadow-xl bg-purple-400">
-                    <img src={engineer} className='w-full h-[200px]' />
+                    <img src={engineer} className='w-full h-[250px]' />
                     <div className="text-center p-3">
                     <h2 className="text-2xl font-bold">Arthur Millar</h2>
                     <p>Civil Engineer</p>
@@ -24,7 +24,7 @@ const Benificial = () => {
                     </div>
                 </div>
                 <div className="shadow-xl bg-purple-400">
-                    <img src={lawyer} className='w-full h-[200px]' />
+                    <img src={lawyer} className='w-full h-[250px]' />
                     <div className="text-center p-3">
                     <h2 className="text-2xl font-bold">Jenifer Rose</h2>
                     <p>Lawyer</p>

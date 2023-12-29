@@ -90,8 +90,8 @@ const MyTasks = () => {
         <div>
             <h2 className="text-3xl my-4 text-center text-purple-600 font-bold">My Tasks</h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-                <div className="bg-blue-400 h-screen w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="bg-blue-400 lg:h-screen md:h-[1200px] h-[2000px] w-full">
                     <h2 className="text-3xl my-4 text-center text-white font-bold">To Do</h2>
 
                     {
@@ -112,7 +112,7 @@ const MyTasks = () => {
                     }
 
                 </div>
-                <div className="bg-yellow-400 h-screen w-full">
+                <div className="bg-yellow-400 lg:h-screen md:h-[1200px] h-[2000px] w-full">
                     <h2 className="text-3xl my-4 text-center text-white font-bold">On Going</h2>
                     {
                         ongoing.map(task => <>
@@ -131,7 +131,7 @@ const MyTasks = () => {
                         </>)
                     }
                 </div>
-                <div className="bg-green-400 h-screen w-full">
+                <div className="bg-green-400 lg:h-screen md:h-[1200px] h-[2000px] w-full">
                     <h2 className="text-3xl my-4 text-center text-white font-bold">Finished</h2>
                     {
                         finished.map(task => <>
